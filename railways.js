@@ -1,7 +1,7 @@
 var myapp=angular.module("myapp", []);
 myapp.controller("myctrl", function($scope, $http)
 {
-    $http.get('Booking.json')
+    $http.get('https://adithkkn.github.io/LAB_WSD_ANGULAR_JSON/Booking.json')
     .success(function(response)
     {
         $scope.names=response.records;
